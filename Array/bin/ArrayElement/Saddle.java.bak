@@ -1,0 +1,39 @@
+package ArrayElement;
+
+public class Saddle {
+	public static void main(String[] args) {
+		
+		
+		int i,j;
+		int [][]a= {{1,6,3},{8,9,7},{5,2,4}};
+		
+		int smallest=0,k;
+		
+		for ( i = 0; i < a.length; i++) {
+			smallest=a[i][0];
+			k=0;
+			
+			for ( j = 0; j < a.length; j++) {
+				smallest=a[i][j];
+				k=j;
+				
+			}
+		
+		
+		int m;
+		for ( m = 0; m < a.length; m++) {
+			
+			if(a[m][k]>smallest)
+			{
+				break;
+			}
+			
+		}
+		if(m==a.length)
+		{
+			System.out.println("Sadle   :"
+					+ ""+smallest);
+		}
+	}
+	}
+}
