@@ -1,0 +1,32 @@
+package Contructor;
+
+public class Bank {
+	double amt;
+	
+	public Bank()
+	{
+	amt=5000;
+	}
+	
+
+	public Bank(double amt)
+	{
+		this();
+		this.amt=this.amt+amt;
+		
+	}
+	
+	
+	void addAmount()
+	{
+		System.out.println(amt);
+	}
+public static void main(String[] args) {
+	
+	
+	Bank b=new Bank();
+	Bank b1=new Bank(300);
+	b1.addAmount();
+	
+}
+}
